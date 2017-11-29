@@ -11,19 +11,11 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <!--animate.css-->
-     <!-- <link rel="stylesheet" href="css/animate.css">
-       <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-  or -->
-
 
     <!--CSS-->
     <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css">
-      <!--google font-->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-
-
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 
     <!--jQuery must also be linked for Bootstrap to function-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -39,242 +31,229 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.dom.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.dom.js"></script>
 
-    <!--P5 sound-->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.sound.min.js"></script> -->
-
-
      <!--P5 sound-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.sound.min.js"></script>
 
     <!--Javascript-->
     <script src="draw.js" type="text/javascript"></script>
 
-
-    <script src="musicplay.js" type="text/javascript"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script> -->
 </head>
-
-
 
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-            <!-- navbar hamburger-->
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <!--hamburger 3 lines-->
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand font-weight-bold" href="#">ART THERAPY</a>
-        </div>
-        <!--navbar hamburger-->
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#activities">ACTIVITIES</a></li>
-            <li><a href="#impact">IMPACT</a></li>
-            <li><a href="#join">JOIN</a></li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+          <!-- navbar hamburger-->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <!--hamburger 3 lines-->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand font-weight-bold" href="#">ART THERAPY</a>
       </div>
-    </nav>
-
-    <!-- First Container: p5 draw-->
-    <div class="container-fluid-1 bg-1">
-      <div class=" container-fluid-1 bg-1">
-        <h1 class="animated zoomIn caption"> Right click, hold & move clockwise </h1>
-      </div>
-      <div id = "containerp5" >
-      </div>
-      <div class="slideAnim container-fluid-1 bg-1">
-        <h1 class="caption"> Try drawing to some music<br><br>
-        <audio controls>
-        <source id= "myAudio" src="ludvico.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-        </audio>
-      </h1>
+      <!--navbar hamburger-->
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#activities">ACTIVITIES</a></li>
+          <li><a href="#impact">IMPACT</a></li>
+          <li><a href="#join">JOIN</a></li>
+        </ul>
       </div>
     </div>
-<!--
-      <img src="images/draw.png" class="img-responsive" style="display:inline" alt="draw">
-      <canvas ></canvas> -->
+  </nav>
+
+  <!-- First Container: p5 draw-->
+  <div class="container-fluid-1 bg-1">
+    <div class=" container-fluid-1 bg-1">
+      <h1 class="animated zoomIn caption"> Click and drag to draw </h1>
     </div>
-
-    <!-- Second Container: feelings -->
-    <div class="container-fluid bg-2 text-center">
-      <h3 class="margin row slideAnim">I guess I'm feeling...</h3>
-      <br>
-      <br>
-      <a href="anxious.html" class="slideAnim btn btn-default btn-lg">
-        <span class="glyphicon"></span> Anxious
-      </a>
-       <a href="tired.html" class="slideAnim btn btn-default btn-lg">
-        <span class="glyphicon"></span> Tired
-      </a>
-      <a class=" slideAnim btn btn-default btn-lg" data-toggle="modal" data-target="#relaxModal">
-        <span class="glyphicon"></span> Relaxed
-      </a>
-      <div class = "slideAnim container-fluid">
-      <a id="scroll" href="#activities">...like I just wanna scroll </a>
+    <div id = "containerp5" >
     </div>
+    <div class="slideAnim container-fluid-1 bg-1">
+      <h1 class="caption"> Try drawing to some music<br><br>
+      <audio controls>
+      <source id= "myAudio" src="ludvico.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+    </h1>
     </div>
+  </div>
 
 
+  <!-- Second Container: Feelings -->
+  <div class="container-fluid bg-2 text-center">
+    <h3 class="margin row slideAnim">I guess I'm feeling...</h3>
+    <br>
+    <br>
+    <a href="anxious.html" class="slideAnim btn btn-default btn-lg">
+      <span class="glyphicon"></span> Anxious
+    </a>
+     <a href="tired.html" class="slideAnim btn btn-default btn-lg">
+      <span class="glyphicon"></span> Tired
+    </a>
+    <!--Modals written at the bottom of the website along with script for slideAnim-->
+    <a class=" slideAnim btn btn-default btn-lg" data-toggle="modal" data-target="#relaxModal">
+      <span class="glyphicon"></span> Relaxed
+    </a>
+    <div class = "slideAnim container-fluid">
+    <a id="scroll" href="#activities">...like I just wanna scroll </a>
+    </div>
+  </div>
 
-    <!-- Third Container (Grid) : Activities-->
-    <div id="activities" class="container-fluid bg-3 text-center">
-      <h3  class="slideAnim margin text-uppercase"> 6 Quick Activities</h3>
-      <p class="slideAnim">For Everyone</p><br>
-      <div class="row slideAnim">
-        <div class="col-sm-2">
-          <a href="#" data-toggle="modal" data-target="#paintingEmotions"> <p>Paint</p>
-          <img src="images/painting emotions.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-         </a>
-        </div>
-        <div class="col-sm-2">
-            <a href="#" data-toggle="modal" data-target="#paintingEmotions">
-          <p>Collaborate</p>
-          <img src="images/mandela.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-         </a>
-        </div>
-        <div class="col-sm-2">
-          <p>Color</p>
-          <img src="images/colouring.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-        </div>
-        <div class="col-sm-2">
-          <p>Write</p>
-          <img src="images/stories.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-        </div>
-        <div class="col-sm-2">
-          <p>Create</p>
-          <img src="images/paintrocks.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-        </div>
-        <div class="col-sm-2">
-          <p>Scribble</p>
-          <img src="images/scribble.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-        </div>
+  <!-- Third Container (Grid) : Activities-->
+  <div id="activities" class="container-fluid bg-3 text-center">
+    <h3  class="slideAnim margin text-uppercase"> 6 Quick Activities</h3>
+    <p class="slideAnim">For Everyone</p><br>
+    <div class="row">
+      <div class="slideAnim col-sm-2">
+        <a href="#" data-toggle="modal" data-target="#paintingEmotions"> <p>Paint</p>
+        <img src="images/painting emotions.jpg" class="img-responsive margin impact" alt="Image">
+       </a>
+      </div>
+      <div class="slideAnim col-sm-2">
+          <a href="#" data-toggle="modal" data-target="#paintingEmotions">
+        <p>Collaborate</p>
+        <img src="images/mandela.jpg" class="img-responsive margin impact" alt="Image">
+       </a>
+      </div>
+      <div class="slideAnim col-sm-2">
+        <p>Color</p>
+        <img src="images/colouring.jpg" class="img-responsive margin impact" alt="Image">
+      </div>
+      <div class="slideAnim col-sm-2">
+        <p>Write</p>
+        <img src="images/stories.jpg" class="img-responsive margin impact" alt="Image">
+      </div>
+      <div class="slideAnim col-sm-2">
+        <p>Create</p>
+        <img src="images/paintrocks.jpg" class="img-responsive margin impact" alt="Image">
+      </div>
+      <div class="slideAnim col-sm-2">
+        <p>Scribble</p>
+        <img src="images/scribble.jpg" class="img-responsive margin impact" alt="Image">
       </div>
     </div>
-
-
+  </div>
 
 <!--Fourth Container: Impact-->
-    <div id="impact" class=" slideAnim container-fluid bg-4 text-center">
-      <h3  class="margin slideaAnim">IMPACT</h3><br>
-      <div class="row">
-        <div class="slideAnim col-sm-4">
-          <p>Mental Health</p>
-          <img src="images/mental wellness.jpg" class="margin img-fluid rounded" style="width:100%" alt="Image">
-          <p class="slideAnim"> Art therapy encourages creativity and self-expression; sensations that are generally suppressed and not experiences in the conventional workplace. It can, however, be used to counter those negative emotions that are experienced within the workplace: Art therapy is a portable form of therapy, and one that can be practiced alone or collectively.</p>
-          <!--image source: Photo by Photo Mix from Pexels https://www.pexels.com/photo/alternative-background-color-cooking-105028/-->
-        </div>
-        <div class="slideAnim col-sm-4">
-          <p>Relationships</p>
-          <img src="images/relationships2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-          <p class="slideAnim"> The usefulness of the art therapy modality in making visible the covert messages and hidden edicts from the family of origin will be illustrated. Through use of art materials couples are given an opportunity to solve problems in a manner which is unique and unfamiliar. The challenge of art tasks leads the couple to problem-solving and a creative approach in mastering a change in their relationship.</p>
-        </div>
-        <div class="slideAnim col-sm-4">
-          <p>Abuse & Trauma</p>
-          <img src="images/trauma.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-          <p class="slideAnim">   Using art to express emotion accesses both visually stored memory and body memory, as not only does it enable people to create images, but the use of art materials such as clay and paint can reconnect them to physical sensation. They may be cut off from their bodily senses, particularly in cases of physical and sexual abuse. Some researchers have suggested that the senses of touch and sight connect directly to our brain’s fear centre which is why art therapy is ideally placed to work with traumatic memory.</p><!-- Photo by Jeremy Bishop on Unsplash-->
-        </div>
+  <div id="impact" class=" slideAnim container-fluid bg-4 text-center">
+    <h3  class="margin slideaAnim">IMPACT</h3><br>
+    <div class="row">
+      <div class="slideAnim col-sm-4">
+        <p>Mental Health</p>
+        <img src="images/mental wellness.jpg" class="margin img-fluid rounded impact" alt="Image">
+        <p class="slideAnim"> Art therapy encourages creativity and self-expression; sensations that are generally suppressed and not experiences in the conventional workplace. It can, however, be used to counter those negative emotions that are experienced within the workplace: Art therapy is a portable form of therapy, and one that can be practiced alone or collectively.</p>
+        <!--image source: Photo by Photo Mix from Pexels https://www.pexels.com/photo/alternative-background-color-cooking-105028/-->
+      </div>
+      <div class="slideAnim col-sm-4">
+        <p>Relationships</p>
+        <img src="images/relationships2.jpg" class="img-responsive margin impact" alt="Image">
+        <p class="slideAnim"> The usefulness of the art therapy modality in making visible the covert messages and hidden edicts from the family of origin will be illustrated. Through use of art materials couples are given an opportunity to solve problems in a manner which is unique and unfamiliar. The challenge of art tasks leads the couple to problem-solving and a creative approach in mastering a change in their relationship.</p>
+      </div>
+      <div class="slideAnim col-sm-4">
+        <p>Abuse & Trauma</p>
+        <img src="images/trauma.jpg" class="img-responsive margin impact" alt="Image">
+        <p class="slideAnim">   Using art to express emotion accesses both visually stored memory and body memory, as not only does it enable people to create images, but the use of art materials such as clay and paint can reconnect them to physical sensation. They may be cut off from their bodily senses, particularly in cases of physical and sexual abuse. Some researchers have suggested that the senses of touch and sight connect directly to our brain’s fear centre which is why art therapy is ideally placed to work with traumatic memory.</p><!-- Photo by Jeremy Bishop on Unsplash-->
       </div>
     </div>
-
+  </div>
 
 <!--Fourth Container: Join-->
-    <div id="join" class="container-fluid bg-5 text-center">
-      <h3  class="margin slideAnim">JOIN THE COMMUNITY</h3><br>
-      <p> Organization of the Month: UMPC Childrens Hospital</p><br><br>
-      <div class="row">
-            <!-- 4:3 aspect ratio -->
-            <div id="video" class="slideAnim d-inline embed-responsive embed-responsive-4by3 ">
-              <iframe id="video" class="embed-responsive-item"  src="https://www.youtube.com/embed/Cm2H4WjcfFw?rel=0"></iframe>
-            </div>
-        </div>
-        <div class="container-fluid-2">
-        <a href="https://www.givetochildrens.org/ceat" class="slideAnim btn btn-default btn-lg">
-        <span class="glyphicon"></span> Learn More</a>
-      </div>
+  <div id="join" class="container-fluid bg-5 text-center">
+    <h3  class="margin slideAnim">JOIN THE COMMUNITY</h3><br>
+    <p> Organization of the Month: UMPC Childrens Hospital</p><br><br>
+    <div class="row">
+      <!-- 4:3 aspect ratio -->
+      <div id="video" class="slideAnim d-inline embed-responsive embed-responsive-4by3 ">
+        <iframe id="video" class="embed-responsive-item"  src="https://www.youtube.com/embed/Cm2H4WjcfFw?rel=0"></iframe>
       </div>
     </div>
+    <div class="container-fluid-2">
+      <a href="https://www.givetochildrens.org/ceat" class="slideAnim btn btn-default btn-lg">
+      <span class="glyphicon"></span> Learn More</a>
+    </div>
+  </div>
 
-    <!-- Modals -->
-    <!-- Modal - -relax-->
-    <div class="modal fade" id="relaxModal" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content for relax-->
-            <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title"><div style="width:100%;height:0;padding-bottom:73%;position:relative;"><iframe src="https://giphy.com/embed/10UeedrT5MIfPG" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div></h4>
-                  <!--inline flex-->
-                </div> <!--modal-header-->
-                <div class="modal-body">
-                    <p>You're on your way to a fabulous day. Drink enough water, don't sweat the small stuff and make the world smile with you.</p>
-                    <p>On that note, we'll be here if you need us, but till then au reÂ·voir.</p>
-                </div> <!--modal-body-->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div><!--modal-footer-->
-            </div><!--modal-content-->
-        </div><!--modal-dialog-->
-    </div><!--modal-->
+
+  <!-- Modals -->
+  <!-- Modal - -relax-->
+  <div class="modal fade" id="relaxModal" role="dialog">
+      <div class="modal-dialog">
+          <!-- Modal content for relax-->
+          <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">
+                  <div class="modal-style"><iframe src="https://giphy.com/embed/10UeedrT5MIfPG" width="100%" height="100%" class="modal-gif" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div></h4>
+                <!--inline flex-->
+              </div> <!--modal-header-->
+              <div class="modal-body">
+                  <p>You're on your way to a fabulous day. Drink enough water, don't sweat the small stuff and make the world smile with you.</p>
+                  <p>On that note, we'll be here if you need us, but till then au reÂ·voir.</p>
+              </div> <!--modal-body-->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div><!--modal-footer-->
+          </div><!--modal-content-->
+      </div><!--modal-dialog-->
+  </div><!--modal-->
 
 <!-- Modal Activity 1-->
-    <div class="modal fade" id="paintingEmotions" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content for relax-->
-            <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title"><img src="images/paintingemotions3.jpg" class="img-responsive margin" style="width:100%" alt="Image">Express yourself</h4>
-                </div> <!--modal-header-->
-                <div class="modal-body">
-                    <p>You will gain an understanding of how much of a role emotion plays in artmaking as they create paintings based on feelings.
-                    <br><br>
-                    MATERIALS: <br>
-                    <ul>
-                        <li> Acrylic Paint</li>
-                        <li> Paint Brush</li>
-                        <li>  Something to paint on: canvas, hand, paper etc.</li>
-                        <li> Background Music</li>
-                    </ul>
-                    <br>
-                    WHAT TO DO:<br>
-                    Take a deep breath - and paint how you feel at that moment. It could be anything - a single dot on a paper or a Andy Warhol Painting. Once you feel like you are in the groove, put on some jazz music and paint to the emotion of the music.Play around with different lines - straight, jagged, squiggly, zig-zag, etc.</p>
+  <div class="modal fade" id="paintingEmotions" role="dialog">
+      <div class="modal-dialog">
+          <!-- Modal content for relax-->
+          <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><img src="images/paintingemotions3.jpg" class="img-responsive margin impact" alt="Image">Express yourself</h4>
+              </div> <!--modal-header-->
+              <div class="modal-body">
+                  <p>You will gain an understanding of how much of a role emotion plays in artmaking as they create paintings based on feelings.
+                  <br><br>
+                  MATERIALS: <br>
+                  <ul>
+                      <li> Acrylic Paint</li>
+                      <li> Paint Brush</li>
+                      <li>  Something to paint on: canvas, hand, paper etc.</li>
+                      <li> Background Music</li>
+                  </ul>
+                  <br>
+                  WHAT TO DO:<br>
+                  Take a deep breath - and paint how you feel at that moment. It could be anything - a single dot on a paper or a Andy Warhol Painting. Once you feel like you are in the groove, put on some jazz music and paint to the emotion of the music.Play around with different lines - straight, jagged, squiggly, zig-zag, etc.</p>
 
-                </div> <!--modal-body-->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div><!--modal-footer-->
-            </div><!--modal-content-->
-        </div><!--modal-dialog-->
-    </div><!--modal-->
+              </div> <!--modal-body-->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div><!--modal-footer-->
+          </div><!--modal-content-->
+      </div><!--modal-dialog-->
+  </div><!--modal-->
 
-    <!-- Footer -->
-    <footer class="container-fluid bg-6 text-center">
-      <p> Designed by Kanika Khosla </p>
-      </a>
-    </footer>
+  <!-- Footer -->
+  <footer class="slideAnim container-fluid bg-6 text-center">
+    <p> Designed by Kanika Khosla </p>
+    </a>
+  </footer>
 
 
-    <script>
-    $(document).ready(function(){
 
-      $(window).scroll(function() {
-        $(".slideAnim").each(function(){
-          var pos = $(this).offset().top;
+  <!--slide animation for the elements when scroll - loads once-->
+  <script>
+  $(document).ready(function(){
 
-          var winTop = $(window).scrollTop();
-            if (pos < winTop + 600) {
-              $(this).addClass("slide");
-            }
-        });
+    $(window).scroll(function() {
+      $(".slideAnim").each(function(){
+        var pos = $(this).offset().top;
+
+        var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("slide");
+          }
       });
-    })
+    });
+  })
     </script>
 </body>
 </html>

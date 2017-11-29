@@ -11,15 +11,15 @@ var previous;
 
 
 function setup() {
+  //create canvas - responsive
   var can = createCanvas(windowWidth, windowHeight);
   can.parent("containerp5");
-  // document.getElementById('containerp5').appendChild(getElementById(defaultCanvas0));
   background(250,0,200);
   current = createVector(0,0);
   previous = createVector(0,0);
-
 };
 
+//make canvas responsive
 function windowResized(){
   resizeCanvas(windowWidth, windowHeight);
 }
